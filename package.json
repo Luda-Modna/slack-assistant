@@ -1,0 +1,26 @@
+{
+  "name": "slack-bot",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@slack/bolt": "^4.6.0",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "deepl": "^1.0.13",
+    "deepl-node": "^1.24.0",
+    "dotenv": "^17.2.3",
+    "node-fetch": "^2.7.0",
+    "openai": "^6.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
