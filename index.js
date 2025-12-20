@@ -53,11 +53,7 @@ async function askDeepSeek (question) {
   } catch (err) {
     console.error('DeepSeek API error:', err.response?.data || err.message);
 
-    await say(
-      'There was a problem contacting the DeepSeek API. ' +
-        'Please try again later or rephrase your question.'
-    );
-    return null;
+    return  'There was a problem contacting the DeepSeek API. ';
   }
 }
 
@@ -68,7 +64,7 @@ app.message(async ({ message, say }) => {
   await say(`Processing your question: "${userQuestion}"...`);
 
   const answer = await askDeepSeek(userQuestion);
-  await say(`Answer: ${answer}`);
+  await say(answer);
 });
 
 (async () => {
